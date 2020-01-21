@@ -82,9 +82,11 @@ class App extends React.Component {
         </header>
 
         <form className="loginForm" id="loginForm" onSubmit={this.submitData}>
-          Password:
-          <input type="password" name="password" onChange={this.inputPassword}/>
-          <button type="submit">Submit</button>
+          <div id="loginCon">
+            <h3 id="passText">Password:</h3>
+            <input type="password" name="password" className="formInputBox" onChange={this.inputPassword}/>
+            <button className="formButton" type="submit">Submit</button>
+          </div>
         </form>
 
       </div>
